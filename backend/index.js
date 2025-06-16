@@ -53,7 +53,7 @@ app.post('/ask', async (req, res) => {
 
     res.json({ reply: aiResponse.choices[0].message.content.trim() });
   } catch (err) {
-    res.status(500).send('OpenAI error');
+    res.status(500).send('OpenAI is not working! error');
   }
 });
 
